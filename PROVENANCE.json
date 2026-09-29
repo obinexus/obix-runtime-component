@@ -1,0 +1,31 @@
+{
+  "package": "obix-runtime-component",
+  "dir": "runtime/obix-runtime-component",
+  "importedBy": "authored in the recovery (no importer entry: there is no upstream package of this name)",
+  "stage": "phase-6 authored",
+  "sources": [
+    {
+      "label": "authored-in-recovery",
+      "note": "written test-first in Phase 6 of the recovery from the canonical IR (obix-dop-ir/3) and its reference evaluator as the statement of what the IR means. No Vue, React or other framework runtime code was consulted or copied; the Level-0 runtime packages (obix-core-runtime, obix-driver-dom) are a separate, frozen track and are not imported."
+    }
+  ],
+  "transforms": [],
+  "notes": [],
+  "localFixes": [],
+  "renamedFrom": [
+    {
+      "name": "@obinexusltd/obix-runtime-component",
+      "dir": "runtime/obix-runtime-component",
+      "stage": "unscoped-naming",
+      "why": "D-102 (2026-09-29): OBIX packages are named without an npm scope — previous name @obinexusltd/obix-runtime-component, current name obix-runtime-component (docs/recovery/unscoped-migration.md); the directory, version and exports are unchanged"
+    }
+  ],
+  "export": {
+    "from": "https://github.com/obinexusmk2/obix-monorepo",
+    "branch": "recovery/obix-api-preserving-rebuild",
+    "commit": "69cafc94910c1add865a520877617ac307668875",
+    "directory": "runtime/obix-runtime-component",
+    "exportedBy": "scripts/release/export-repos.mjs",
+    "note": "a clean initial commit of this package; the monorepo history is not imported (D-103). Local machine paths in this record are replaced by <local workspace>."
+  }
+}
