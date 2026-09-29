@@ -27,7 +27,7 @@ import { Linker, OBIX_RUNTIME_IR, OBIX_RUNTIME_IR_SCHEMA, ObixRuntimeError } fro
 
 ## Architecture role
 
-`obix-runtime-component` is part of the **experimental native browser runtime** (Phase 6): it runs canonical DOP IR with no Vue. Applications that choose the native runtime install `obix-runtime-browser`; the other runtime packages are its lower layers.
+`obix-runtime-component` is a **lower layer of the experimental native browser runtime** (Phase 6), which runs canonical DOP IR with no Vue. Applications reach the runtime through the umbrella `obix` (`createObixApp`, `ref`, `computed`, `watch`, D-104), which stands on `obix-runtime-browser` and `obix-runtime-reactivity`.
 
 The architecture of OBIX — the package families and which packages are public API — is indexed in the umbrella: [docs/architecture.md](https://github.com/obinexus/obix/blob/main/docs/architecture.md).
 
